@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Damian Stevenson - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">Damian</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Damian Stevenson</h1>
+                <p class="subtitle">Full Stack Developer & Creative Problem Solver</p>
+                <a href="#about" class="cta-button">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm Damian Stevenson, an AI engineer passionate about building intelligent solutions
+                        that leverage cutting-edge machine learning and artificial intelligence technologies.
+                        I specialize in developing AI systems that solve real-world problems and drive innovation.
+                    </p>
+                    <p>
+                        When I'm not writing code, you can find me reading. I'm constantly expanding my knowledge
+                        through books, research papers, and articles to stay at the forefront of AI developments.
+                    </p>
+                    <div class="skills-list">
+                        <h3>Skills</h3>
+                        <div class="skills-grid">
+                            <span class="skill-tag">HTML & CSS</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">SQL</span>
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">Web Design</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"></div>
+                    <div class="project-content">
+                        <h3>E-Commerce Platform</h3>
+                        <p>
+                            A full-stack e-commerce application built with React and Node.js featuring
+                            product catalog, shopping cart, and payment integration.
+                        </p>
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                        <a href="#" class="project-link">View Project →</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);"></div>
+                    <div class="project-content">
+                        <h3>Task Management App</h3>
+                        <p>
+                            A collaborative task management tool with real-time updates, user authentication,
+                            and team workspace features.
+                        </p>
+                        <div class="project-tags">
+                            <span>React</span>
+                            <span>Firebase</span>
+                            <span>CSS</span>
+                        </div>
+                        <a href="#" class="project-link">View Project →</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"></div>
+                    <div class="project-content">
+                        <h3>Weather Dashboard</h3>
+                        <p>
+                            A responsive weather application using third-party APIs to display current conditions,
+                            forecasts, and interactive maps.
+                        </p>
+                        <div class="project-tags">
+                            <span>JavaScript</span>
+                            <span>APIs</span>
+                            <span>CSS Grid</span>
+                        </div>
+                        <a href="#" class="project-link">View Project →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <p class="contact-subtitle">Let's work together on something amazing</p>
+
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Your Name"
+                        required
+                    >
+                </div>
+                <div class="form-group">
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="your@email.com"
+                        required
+                    >
+                </div>
+                <div class="form-group">
+                    <textarea
+                        id="message"
+                        name="message"
+                        placeholder="Your message..."
+                        rows="5"
+                        required
+                    ></textarea>
+                </div>
+                <button type="submit" class="submit-button">Send Message</button>
+                <p id="formMessage" class="form-message"></p>
+            </form>
+
+            <div class="social-links">
+                <h3>Connect With Me</h3>
+                <div class="social-icons">
+                    <a href="https://github.com" target="_blank" aria-label="GitHub">GitHub</a>
+                    <a href="https://www.linkedin.com/in/damian-stevenson-872207250" target="_blank" aria-label="LinkedIn">LinkedIn</a>
+                    <a href="mailto:damianrdstevenson2000@gmail.com" aria-label="Email">Email</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Damian Stevenson. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
