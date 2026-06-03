@@ -3,5 +3,5 @@
   "title": "Full-Stack Engineer | Backend · AI · Data",
   "ctaLabel": "Learn More",
   "ctaHref": "#projects",
-  "backgroundImage": "public/images/hero-bg.svg"
+  "backgroundImage": "/images/hero-bg.svg"
 }

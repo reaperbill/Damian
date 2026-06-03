@@ -9,9 +9,9 @@ const SECTION_ORDER = ['Software', 'Data', 'Tool'] as const;
 type SectionName = (typeof SECTION_ORDER)[number];
 
 const CATEGORY_DEFAULT_IMAGE: Record<string, string> = {
-  Software: 'public/images/default-software.svg',
-  Data:     'public/images/default-data.svg',
-  Tool:     'public/images/default-tool.svg',
+  Software: '/images/default-software.svg',
+  Data:     '/images/default-data.svg',
+  Tool:     '/images/default-tool.svg',
 };
 
 function useScrollReveal(ref: React.RefObject<HTMLElement | null>) {
