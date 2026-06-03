@@ -31,7 +31,6 @@ export interface ProjectDetail {
 }
 
 interface ProjectMetadata {
-  projectPath?: string;
   title?: string;
   description?: string;
   shortDescription?: string;
@@ -74,7 +73,7 @@ declare global {
   var _portfolioWatcher: FSWatcher | undefined;
 }
 
-const projectDefaults = [
+const COLOR_DEFAULTS = [
   'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
   'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
   'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)',
@@ -82,12 +81,7 @@ const projectDefaults = [
   'linear-gradient(135deg, #f6d365 0%, #fda085 100%)',
 ];
 
-const codeExtensions = new Set([
-  '.js', '.jsx', '.ts', '.tsx', '.py', '.java', '.c', '.cpp', '.cs',
-  '.go', '.rb', '.php', '.html', '.css', '.swift', '.sh', '.bash', '.ipynb', '.sql', '.twb',
-]);
-
-async function collectMetadataFiles(dir: string): Promise<string[]> {
+async function collectJsonFiles(dir: string): Promise<string[]> {
   let dirents;
   try {
     dirents = await fs.readdir(dir, { withFileTypes: true });
@@ -98,7 +92,7 @@ async function collectMetadataFiles(dir: string): Promise<string[]> {
   for (const d of dirents) {
     const child = path.join(dir, d.name);
     if (d.isDirectory()) {
-      files.push(...(await collectMetadataFiles(child)));
+      files.push(...(await collectJsonFiles(child)));
     } else if (d.isFile() && d.name.toLowerCase().endsWith('.json')) {
       files.push(child);
     }
@@ -106,123 +100,64 @@ async function collectMetadataFiles(dir: string): Promise<string[]> {
   return files;
 }
 
-async function hasCodeFiles(target: string): Promise<boolean> {
-  try {
-    const stat = await fs.stat(target);
-    if (stat.isFile()) return codeExtensions.has(path.extname(target).toLowerCase());
-    if (!stat.isDirectory()) return false;
-    const dirents = await fs.readdir(target, { withFileTypes: true });
-    for (const d of dirents) {
-      const child = path.join(target, d.name);
-      if (d.isFile() && codeExtensions.has(path.extname(d.name).toLowerCase())) return true;
-      if (d.isDirectory() && (await hasCodeFiles(child))) return true;
-    }
-    return false;
-  } catch {
-    return false;
-  }
-}
+async function buildCache(): Promise<ProjectCache> {
+  const metadataDir = path.join(process.cwd(), 'data', 'projects-json');
+  const jsonFiles = await collectJsonFiles(metadataDir);
 
-async function loadCategory(
-  metadataRoot: string,
-  folderRoot: string,
-  categoryLabel: string,
-): Promise<InternalProject[]> {
-  const metadataFiles = await collectMetadataFiles(metadataRoot);
-  const projects: InternalProject[] = [];
+  const personal: InternalProject[] = [];
+  const school: InternalProject[] = [];
+  const byId: Record<string, InternalProject> = {};
+  let colorIndex = 0;
 
-  for (const metaPath of metadataFiles) {
+  for (const filePath of jsonFiles) {
     let meta: ProjectMetadata;
     try {
-      meta = JSON.parse(await fs.readFile(metaPath, 'utf8'));
+      meta = JSON.parse(await fs.readFile(filePath, 'utf8'));
     } catch {
       continue;
     }
 
-    const projectPath = meta.projectPath
-      ? path.normalize(meta.projectPath)
-      : path.basename(metaPath, '.json');
-    const absolute = path.resolve(folderRoot, projectPath);
-    const relative = path
-      .relative(folderRoot, absolute)
-      .split(path.sep)
-      .join('/');
+    const id = path.basename(filePath, '.json');
 
-    if (relative.startsWith('..') || relative === '') continue;
+    const sep = path.sep;
+    const isSchool =
+      filePath.includes(`${sep}College${sep}`) ||
+      filePath.includes(`${sep}Flatiron${sep}School${sep}`);
 
-    const hasCode = await hasCodeFiles(absolute);
-    const hasExplicitCategory = typeof meta.category === 'string';
-    const hasLink = 'link' in meta && !!meta.link;
-
-    if (!hasCode) {
-      // No local code — include only if the JSON has an explicit category or link.
-      // Use the JSON file's location to assign it to the correct loadCategory pass.
-      if (!hasExplicitCategory && !hasLink) continue;
-      const sep = path.sep;
-      const inSchool =
-        metaPath.includes(`${sep}College${sep}`) ||
-        metaPath.includes(`${sep}Flatiron${sep}School${sep}`);
-      const inPersonal =
-        metaPath.includes(`${sep}projects${sep}`) ||
-        metaPath.includes(`${sep}Flatiron${sep}Projects${sep}`);
-      if (categoryLabel === 'School' && !inSchool) continue;
-      if (categoryLabel === 'Personal' && !inPersonal) continue;
-    }
-
-    let lastModified = 0;
-    try {
-      const stat = await fs.stat(absolute);
-      lastModified = stat.mtimeMs;
-    } catch {
-      lastModified = 0;
-    }
-
-    // JSON `category` (Data/Software/Tool) takes precedence over path-derived label
-    const category = hasExplicitCategory ? (meta.category as string) : categoryLabel;
-    const title = meta.title ?? path.basename(absolute);
+    const categoryLabel = isSchool ? 'School' : 'Personal';
+    const category = typeof meta.category === 'string' ? meta.category : categoryLabel;
+    const title = meta.title ?? id;
     const description = meta.description ?? `A ${category} project.`;
     const shortDescription = meta.shortDescription ?? description;
-    const tags = Array.isArray(meta.tags) ? meta.tags : [];
-    const color = meta.color ?? projectDefaults[projects.length % projectDefaults.length];
-    const openInNewTab = meta.openInNewTab !== false;
-    const link = 'link' in meta ? (meta.link ?? null) : null;
-    const weight = typeof meta.weight === 'number' ? meta.weight : 50;
-    const subcategory = typeof meta.subcategory === 'string' ? meta.subcategory : null;
-    const image = typeof meta.image === 'string' && meta.image ? meta.image : null;
 
-    projects.push({
-      id: relative,
+    const project: InternalProject = {
+      id,
       title,
       category,
-      subcategory,
+      subcategory: typeof meta.subcategory === 'string' ? meta.subcategory : null,
       shortDescription,
       description,
-      tags,
-      color,
-      image,
-      link,
-      openInNewTab,
-      lastModified,
-      weight,
-    });
+      tags: Array.isArray(meta.tags) ? meta.tags : [],
+      color: meta.color ?? COLOR_DEFAULTS[colorIndex % COLOR_DEFAULTS.length],
+      image: typeof meta.image === 'string' && meta.image ? meta.image : null,
+      link: 'link' in meta ? (meta.link ?? null) : null,
+      openInNewTab: meta.openInNewTab !== false,
+      lastModified: 0,
+      weight: typeof meta.weight === 'number' ? meta.weight : 50,
+    };
+
+    colorIndex++;
+    byId[id] = project;
+    if (isSchool) {
+      school.push(project);
+    } else {
+      personal.push(project);
+    }
   }
 
-  return projects.sort((a, b) => b.weight - a.weight || b.lastModified - a.lastModified);
-}
-
-async function buildCache(): Promise<ProjectCache> {
-  const root = path.join(process.cwd(), '..');
-  const projectsRoot = path.join(root, 'Projects');
-  const schoolRoot = path.join(root, 'School');
-  const metadataDir = path.join(process.cwd(), 'data', 'projects-json');
-
-  const [personal, school] = await Promise.all([
-    loadCategory(metadataDir, projectsRoot, 'Personal'),
-    loadCategory(metadataDir, schoolRoot, 'School'),
-  ]);
-
-  const byId: Record<string, InternalProject> = {};
-  for (const p of [...personal, ...school]) byId[p.id] = p;
+  const byWeight = (a: InternalProject, b: InternalProject) => b.weight - a.weight;
+  personal.sort(byWeight);
+  school.sort(byWeight);
 
   return { personal, school, byId };
 }
@@ -235,7 +170,7 @@ function ensureWatcher(): void {
       global._portfolioCache = undefined;
     });
   } catch {
-    // File watching unavailable in this environment — cache persists until restart
+    // file watching unavailable in this environment
   }
 }
 
