@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { useMemo } from 'react';
 import heroData from '@/data/hero.json';
 
@@ -18,7 +19,14 @@ export default function Contact() {
     <section id="contact" className="contact">
       {bgImage && (
         <>
-          <div className="contact-bg" style={{ backgroundImage: `url(${bgImage})` }} />
+          <div className="contact-bg">
+            <Image
+              src={bgImage}
+              alt=""
+              fill
+              style={{ objectFit: 'cover', objectPosition: 'bottom center' }}
+            />
+          </div>
           <div className="hero-overlay" />
         </>
       )}

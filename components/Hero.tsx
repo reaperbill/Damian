@@ -8,7 +8,15 @@ export default function Hero() {
     <section id="home" className="hero">
       {backgroundImage && (
         <>
-          <div className="hero-bg" style={{ backgroundImage: `url(${backgroundImage})` }} />
+          <div className="hero-bg">
+            <Image
+              src={backgroundImage}
+              alt=""
+              fill
+              priority
+              style={{ objectFit: 'cover', objectPosition: 'top center' }}
+            />
+          </div>
           <div className="hero-overlay" />
         </>
       )}

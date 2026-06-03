@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import Link from 'next/link';
 import { useState, useEffect, useRef, useCallback } from 'react';
 import type { ProjectSummary } from '@/lib/projects';
@@ -50,7 +51,11 @@ function ProjectCard({
       {(() => {
         const img = project.image ?? CATEGORY_DEFAULT_IMAGE[project.category] ?? null;
         return img
-          ? <img src={img} alt={project.title} className="project-image project-image-photo" />
+          ? (
+            <div className="project-image" style={{ position: 'relative', overflow: 'hidden' }}>
+              <Image src={img} alt={project.title} fill style={{ objectFit: 'cover' }} />
+            </div>
+          )
           : <div className="project-image" style={{ background: project.color }} />;
       })()}
       <div className="project-content">

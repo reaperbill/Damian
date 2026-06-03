@@ -97,9 +97,7 @@ body {
 .hero-bg {
   position: absolute;
   inset: 0;
-  background-size: cover;
-  background-position: top center;
-  background-repeat: no-repeat;
+  overflow: hidden;
   z-index: 0;
 }
 
@@ -467,9 +465,7 @@ body {
 .contact-bg {
   position: absolute;
   inset: 0;
-  background-size: cover;
-  background-position: bottom center;
-  background-repeat: no-repeat;
+  overflow: hidden;
   z-index: 0;
 }
 
@@ -722,9 +718,7 @@ body {
 .page-bg-fixed {
   position: fixed;
   inset: 0;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  overflow: hidden;
   z-index: -2;
   pointer-events: none;
 }
