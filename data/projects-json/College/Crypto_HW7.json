@@ -1,0 +1,18 @@
+{
+  "projectPath": "College/Crypto/hw7",
+  "title": "Password Dictionary Attack",
+  "description": "A SHA-256 dictionary attack tool that cracks both salted and unsalted password hashes using a configurable alphanumeric character set. Demonstrates how weak passwords fall quickly to brute-force and wordlist strategies, and how salting increases attacker cost.",
+  "shortDescription": "SHA-256 dictionary attack on salted and unsalted password hashes.",
+  "tags": [
+    "Python",
+    "Cryptography",
+    "SHA-256",
+    "Security",
+    "Password Cracking"
+  ],
+  "color": "linear-gradient(135deg, #0f2027 0%, #2c5364 100%)",
+  "link": null,
+  "openInNewTab": false,
+  "weight": 33,
+  "category": "Tool"
+}

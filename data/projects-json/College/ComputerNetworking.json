@@ -1,0 +1,19 @@
+{
+  "projectPath": "College/Computer Net/hands_on_socket",
+  "title": "Computer Networking",
+  "description": "A fully functional TCP/IP banking application \u00e2\u20ac\u201d the standout hands-on implementation in the collection. A multi-threaded Python server listens on port 1025, managing a shared account balance while concurrently handling DEPOSIT, WITHDRAW, and BALANCE commands from multiple clients. A menu-driven Python client connects over a raw socket stream, sending binary-formatted requests and reading real-time responses.",
+  "shortDescription": "Multi-threaded Python TCP banking server and client \u00e2\u20ac\u201d fully working socket programming implementation.",
+  "tags": [
+    "Networking",
+    "Python",
+    "TCP/IP",
+    "Sockets",
+    "Client-Server",
+    "Threading"
+  ],
+  "color": "linear-gradient(135deg, #1f4037 0%, #99f2c8 100%)",
+  "link": null,
+  "openInNewTab": false,
+  "weight": 42,
+  "category": "Tool"
+}

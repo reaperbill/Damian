@@ -1,0 +1,18 @@
+{
+  "projectPath": "College/Database/hw5",
+  "title": "PL/SQL Stored Procedure",
+  "description": "An `InsertTrip` stored procedure in Oracle PL/SQL that validates foreign key references for customer, driver, and vehicle before inserting a new trip record. Auto-generates Trip IDs via sequence, and reports validation failures and success messages through DBMS_OUTPUT.",
+  "shortDescription": "Oracle PL/SQL InsertTrip procedure with foreign key validation and auto-incremented IDs.",
+  "tags": [
+    "SQL",
+    "Oracle",
+    "PL/SQL",
+    "Stored Procedures",
+    "Databases"
+  ],
+  "color": "linear-gradient(135deg, #654ea3 0%, #eaafc8 100%)",
+  "link": null,
+  "openInNewTab": false,
+  "weight": 30,
+  "category": "Tool"
+}

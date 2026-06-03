@@ -1,0 +1,23 @@
+{
+  "bio": [
+    "I'm a software developer and data analyst with experience across full-stack engineering, cloud infrastructure, and data science. I work up and down the stack — building React and Next.js applications backed by AWS, writing data pipelines in Python and PySpark, and designing systems that range from security tools to distributed analytics platforms.",
+    "When I am not coding, I enjoy fishing, hiking, and exploring the outdoors. I also have a passion for reading, particularly science fiction and fantasy novels. I find that immersing myself in different worlds through books helps fuel my creativity and problem-solving skills in software development."
+  ],
+  "skills": [
+    "Python",
+    "JavaScript / TypeScript",
+    "Java",
+    "SQL",
+    "React / Next.js",
+    "Node.js",
+    "HTML & CSS",
+    "AWS",
+    "Databases",
+    "Pandas / PySpark",
+    "Tableau",
+    "Machine Learning",
+    "Cryptography",
+    "Networking",
+    "Git"
+  ]
+}

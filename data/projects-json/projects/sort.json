@@ -1,0 +1,17 @@
+{
+  "title": "Task Assignment Calendar",
+  "description": "A React scheduling tool for planning tasks across a team. Tasks are displayed on a drag-and-drop calendar color-coded by assigned member \u00e2\u20ac\u201d events can be dragged to reschedule or resized directly on the calendar to adjust time spans. Supports manual task entry, multi-select batch operations, member visibility toggles, and filtering the calendar view by individual team members. Task data can be imported from JSON or Excel files and exported back to JSON for use elsewhere.",
+  "shortDescription": "React drag-and-drop calendar for assigning and planning tasks across team members with resizable time spans.",
+  "tags": [
+    "React",
+    "JavaScript",
+    "Scheduling",
+    "Drag and Drop",
+    "Task Management"
+  ],
+  "color": "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+  "link": null,
+  "openInNewTab": true,
+  "weight": 72,
+  "category": "Tool"
+}

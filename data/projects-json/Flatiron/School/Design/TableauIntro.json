@@ -1,0 +1,18 @@
+{
+  "title": "Tableau: Olympic Games Dashboard",
+  "description": "An introductory Tableau workbook visualizing Olympic Games data across four datasets \u00e2\u20ac\u201d athletes, hosts, medals, and results. Explores medal distributions by country and sport, host city trends, and athlete performance patterns using Tableau's core visualization and filtering features.",
+  "shortDescription": "Tableau workbook exploring Olympic athletes, medals, and host city data.",
+  "tags": [
+    "Tableau",
+    "Data Visualization",
+    "Olympics",
+    "Dashboard",
+    "Flatiron"
+  ],
+  "color": "linear-gradient(135deg, #005C97 0%, #363795 100%)",
+  "link": "https://public.tableau.com/views/SummerOlympicsDashboard_17792296812960/SummerOlympicDashboard?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link",
+  "openInNewTab": true,
+  "weight": 22,
+  "subcategory": "Design",
+  "category": "Data"
+}

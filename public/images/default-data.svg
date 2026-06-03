@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <!-- Dashboard background -->
+  <rect width="800" height="400" fill="#0f172a"/>
+
+  <!-- Top navbar -->
+  <rect width="800" height="44" fill="#1e293b"/>
+  <!-- Logo -->
+  <rect x="20" y="13" width="28" height="18" rx="4" fill="#3b82f6"/>
+  <rect x="56" y="17" width="80" height="10" rx="3" fill="#94a3b8"/>
+  <!-- Nav items -->
+  <rect x="260" y="17" width="50" height="10" rx="3" fill="#64748b"/>
+  <rect x="326" y="17" width="60" height="10" rx="3" fill="#3b82f6"/>
+  <rect x="402" y="17" width="55" height="10" rx="3" fill="#64748b"/>
+  <!-- Right side -->
+  <circle cx="740" cy="22" r="12" fill="#334155"/>
+  <rect x="756" y="17" width="24" height="10" rx="3" fill="#334155"/>
+
+  <!-- KPI Cards row -->
+  <rect x="20" y="58"  width="175" height="70" rx="8" fill="#1e293b"/>
+  <rect x="207" y="58" width="175" height="70" rx="8" fill="#1e293b"/>
+  <rect x="394" y="58" width="175" height="70" rx="8" fill="#1e293b"/>
+  <rect x="581" y="58" width="199" height="70" rx="8" fill="#1e293b"/>
+  <!-- KPI labels -->
+  <rect x="32"  y="68" width="80" height="7" rx="2" fill="#64748b"/>
+  <rect x="219" y="68" width="90" height="7" rx="2" fill="#64748b"/>
+  <rect x="406" y="68" width="75" height="7" rx="2" fill="#64748b"/>
+  <rect x="593" y="68" width="85" height="7" rx="2" fill="#64748b"/>
+  <!-- KPI values (big numbers) -->
+  <rect x="32"  y="84" width="90" height="18" rx="3" fill="#f1f5f9"/>
+  <rect x="219" y="84" width="80" height="18" rx="3" fill="#f1f5f9"/>
+  <rect x="406" y="84" width="85" height="18" rx="3" fill="#f1f5f9"/>
+  <rect x="593" y="84" width="95" height="18" rx="3" fill="#f1f5f9"/>
+  <!-- KPI trend indicators -->
+  <rect x="32"  y="110" width="40" height="8" rx="2" fill="#10b981"/>
+  <rect x="219" y="110" width="35" height="8" rx="2" fill="#10b981"/>
+  <rect x="406" y="110" width="38" height="8" rx="2" fill="#f59e0b"/>
+  <rect x="593" y="110" width="42" height="8" rx="2" fill="#ef4444"/>
+
+  <!-- Bar Chart (left) -->
+  <rect x="20" y="143" width="370" height="175" rx="8" fill="#1e293b"/>
+  <rect x="32" y="153" width="130" height="9" rx="2" fill="#f1f5f9"/>
+  <rect x="32" y="167" width="80" height="7" rx="2" fill="#475569"/>
+  <!-- Chart grid lines -->
+  <line x1="60" y1="295" x2="375" y2="295" stroke="#334155" stroke-width="1"/>
+  <line x1="60" y1="272" x2="375" y2="272" stroke="#334155" stroke-width="1"/>
+  <line x1="60" y1="249" x2="375" y2="249" stroke="#334155" stroke-width="1"/>
+  <line x1="60" y1="226" x2="375" y2="226" stroke="#334155" stroke-width="1"/>
+  <line x1="60" y1="203" x2="375" y2="203" stroke="#334155" stroke-width="1"/>
+  <!-- Bar chart bars -->
+  <rect x="68"  y="228" width="34" height="67" rx="3" fill="#3b82f6"/>
+  <rect x="114" y="215" width="34" height="80" rx="3" fill="#3b82f6"/>
+  <rect x="160" y="238" width="34" height="57" rx="3" fill="#3b82f6"/>
+  <rect x="206" y="203" width="34" height="92" rx="3" fill="#60a5fa"/>
+  <rect x="252" y="222" width="34" height="73" rx="3" fill="#3b82f6"/>
+  <rect x="298" y="210" width="34" height="85" rx="3" fill="#60a5fa"/>
+  <rect x="344" y="195" width="34" height="100" rx="3" fill="#93c5fd"/>
+  <!-- X-axis labels -->
+  <rect x="68"  y="300" width="34" height="6" rx="2" fill="#475569"/>
+  <rect x="114" y="300" width="34" height="6" rx="2" fill="#475569"/>
+  <rect x="160" y="300" width="34" height="6" rx="2" fill="#475569"/>
+  <rect x="206" y="300" width="34" height="6" rx="2" fill="#475569"/>
+  <rect x="252" y="300" width="34" height="6" rx="2" fill="#475569"/>
+  <rect x="298" y="300" width="34" height="6" rx="2" fill="#475569"/>
+  <rect x="344" y="300" width="34" height="6" rx="2" fill="#475569"/>
+
+  <!-- Line Chart (right) -->
+  <rect x="402" y="143" width="378" height="175" rx="8" fill="#1e293b"/>
+  <rect x="414" y="153" width="130" height="9" rx="2" fill="#f1f5f9"/>
+  <rect x="414" y="167" width="80" height="7" rx="2" fill="#475569"/>
+  <!-- Line chart area (polyline approximated with a path fill) -->
+  <polygon points="430,290 468,265 506,258 544,240 582,248 620,222 658,230 696,205 734,215 762,200 762,295 430,295"
+           fill="#3b82f6" opacity="0.15"/>
+  <!-- Line -->
+  <polyline points="430,290 468,265 506,258 544,240 582,248 620,222 658,230 696,205 734,215 762,200"
+            fill="none" stroke="#3b82f6" stroke-width="2.5" stroke-linejoin="round"/>
+  <!-- Data points -->
+  <circle cx="430" cy="290" r="4" fill="#3b82f6"/>
+  <circle cx="468" cy="265" r="4" fill="#3b82f6"/>
+  <circle cx="506" cy="258" r="4" fill="#3b82f6"/>
+  <circle cx="544" cy="240" r="4" fill="#3b82f6"/>
+  <circle cx="582" cy="248" r="4" fill="#3b82f6"/>
+  <circle cx="620" cy="222" r="4" fill="#60a5fa"/>
+  <circle cx="658" cy="230" r="4" fill="#60a5fa"/>
+  <circle cx="696" cy="205" r="4" fill="#93c5fd"/>
+  <circle cx="734" cy="215" r="4" fill="#93c5fd"/>
+  <circle cx="762" cy="200" r="4" fill="#bae6fd"/>
+  <!-- Second line (orange) -->
+  <polyline points="430,270 468,278 506,268 544,260 582,270 620,255 658,263 696,248 734,255 762,242"
+            fill="none" stroke="#f59e0b" stroke-width="2" stroke-linejoin="round" stroke-dasharray="6 3"/>
+  <!-- Grid lines -->
+  <line x1="430" y1="295" x2="770" y2="295" stroke="#334155" stroke-width="1"/>
+  <line x1="430" y1="272" x2="770" y2="272" stroke="#334155" stroke-width="1"/>
+  <line x1="430" y1="249" x2="770" y2="249" stroke="#334155" stroke-width="1"/>
+  <line x1="430" y1="226" x2="770" y2="226" stroke="#334155" stroke-width="1"/>
+  <line x1="430" y1="203" x2="770" y2="203" stroke="#334155" stroke-width="1"/>
+
+  <!-- Data table at bottom -->
+  <rect x="20" y="330" width="760" height="58" rx="8" fill="#1e293b"/>
+  <!-- Table header -->
+  <rect x="20" y="330" width="760" height="22" rx="8" fill="#263348"/>
+  <rect x="32"  y="337" width="80" height="8" rx="2" fill="#64748b"/>
+  <rect x="200" y="337" width="60" height="8" rx="2" fill="#64748b"/>
+  <rect x="360" y="337" width="60" height="8" rx="2" fill="#64748b"/>
+  <rect x="520" y="337" width="60" height="8" rx="2" fill="#64748b"/>
+  <rect x="680" y="337" width="60" height="8" rx="2" fill="#64748b"/>
+  <!-- Table row 1 -->
+  <rect x="32"  y="360" width="100" height="7" rx="2" fill="#94a3b8"/>
+  <rect x="200" y="360" width="50"  height="7" rx="2" fill="#94a3b8"/>
+  <rect x="360" y="360" width="55"  height="7" rx="2" fill="#94a3b8"/>
+  <rect x="520" y="360" width="50"  height="7" rx="2" fill="#10b981"/>
+  <rect x="680" y="360" width="55"  height="7" rx="2" fill="#94a3b8"/>
+  <!-- Table row 2 -->
+  <rect x="32"  y="375" width="90"  height="7" rx="2" fill="#94a3b8"/>
+  <rect x="200" y="375" width="55"  height="7" rx="2" fill="#94a3b8"/>
+  <rect x="360" y="375" width="50"  height="7" rx="2" fill="#94a3b8"/>
+  <rect x="520" y="375" width="55"  height="7" rx="2" fill="#f59e0b"/>
+  <rect x="680" y="375" width="60"  height="7" rx="2" fill="#94a3b8"/>
+</svg>

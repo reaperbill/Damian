@@ -1,0 +1,18 @@
+{
+  "projectPath": "College/AI/HW4",
+  "title": "Machine Learning Classification",
+  "description": "A Jupyter notebook tackling a supervised classification problem \u00e2\u20ac\u201d covers feature selection, model training, evaluation metrics, and comparative analysis across multiple classifiers to identify the best-performing approach on structured data.",
+  "shortDescription": "Supervised ML classification: feature selection, model training, and evaluation.",
+  "tags": [
+    "Python",
+    "Machine Learning",
+    "Jupyter",
+    "Classification",
+    "AI"
+  ],
+  "color": "linear-gradient(135deg, #11998e 0%, #96c93d 100%)",
+  "link": null,
+  "openInNewTab": false,
+  "weight": 38,
+  "category": "Data"
+}

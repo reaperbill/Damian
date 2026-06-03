@@ -1,0 +1,19 @@
+{
+  "projectPath": "College/BDAM/HW2",
+  "title": "Apriori Association Rule Mining",
+  "description": "Python implementation of the Apriori algorithm that mines frequent itemsets and generates association rules from browsing session data. Uses lambda expressions and groupByKey to count item co-occurrences and compute confidence scores for both item pairs and triples.",
+  "shortDescription": "Apriori algorithm for frequent itemset and association rule mining on browsing data.",
+  "tags": [
+    "Python",
+    "PySpark",
+    "Data Mining",
+    "Apriori",
+    "Association Rules",
+    "Lambda"
+  ],
+  "color": "linear-gradient(135deg, #8e44ad 0%, #3498db 100%)",
+  "link": null,
+  "openInNewTab": false,
+  "weight": 40,
+  "category": "Data"
+}

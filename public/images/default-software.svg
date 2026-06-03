@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <!-- Page background -->
+  <rect width="800" height="400" fill="#f1f5f9"/>
+
+  <!-- Browser chrome -->
+  <rect width="800" height="42" fill="#e2e8f0"/>
+  <!-- Browser nav buttons -->
+  <circle cx="20" cy="21" r="7" fill="#cbd5e1"/>
+  <circle cx="40" cy="21" r="7" fill="#cbd5e1"/>
+  <circle cx="60" cy="21" r="7" fill="#cbd5e1"/>
+  <!-- Address bar -->
+  <rect x="80" y="11" width="560" height="20" rx="10" fill="#f8fafc"/>
+  <rect x="92" y="17" width="8" height="8" rx="4" fill="#64748b"/>
+  <rect x="106" y="19" width="140" height="6" rx="3" fill="#94a3b8"/>
+  <!-- Browser action icons -->
+  <rect x="658" y="14" width="24" height="14" rx="3" fill="#cbd5e1"/>
+  <rect x="688" y="14" width="24" height="14" rx="3" fill="#cbd5e1"/>
+  <rect x="718" y="14" width="60" height="14" rx="3" fill="#cbd5e1"/>
+
+  <!-- Website navbar -->
+  <rect x="0" y="42" width="800" height="50" fill="#0f172a"/>
+  <!-- Logo block -->
+  <rect x="24" y="57" width="80" height="20" rx="4" fill="#3b82f6"/>
+  <!-- Nav links -->
+  <rect x="200" y="62" width="40" height="10" rx="3" fill="#94a3b8"/>
+  <rect x="256" y="62" width="50" height="10" rx="3" fill="#94a3b8"/>
+  <rect x="322" y="62" width="55" height="10" rx="3" fill="#94a3b8"/>
+  <rect x="393" y="62" width="45" height="10" rx="3" fill="#94a3b8"/>
+  <!-- CTA button in nav -->
+  <rect x="690" y="56" width="80" height="22" rx="11" fill="#3b82f6"/>
+
+  <!-- Hero section -->
+  <rect x="0" y="92" width="800" height="160" fill="#0f172a"/>
+  <!-- Hero content -->
+  <rect x="80" y="115" width="280" height="18" rx="4" fill="#f1f5f9"/>
+  <rect x="80" y="143" width="200" height="12" rx="3" fill="#64748b"/>
+  <rect x="80" y="163" width="230" height="10" rx="3" fill="#64748b"/>
+  <rect x="80" y="183" width="190" height="10" rx="3" fill="#64748b"/>
+  <!-- CTA buttons -->
+  <rect x="80" y="205" width="110" height="32" rx="16" fill="#3b82f6"/>
+  <rect x="202" y="205" width="110" height="32" rx="16" fill="transparent" stroke="#475569" stroke-width="2"/>
+  <!-- Hero graphic (abstract dashboard preview) -->
+  <rect x="460" y="105" width="280" height="135" rx="8" fill="#1e293b"/>
+  <rect x="470" y="115" width="260" height="8" rx="2" fill="#334155"/>
+  <rect x="470" y="131" width="60" height="40" rx="4" fill="#3b82f6" opacity="0.6"/>
+  <rect x="538" y="131" width="60" height="55" rx="4" fill="#8b5cf6" opacity="0.6"/>
+  <rect x="606" y="131" width="60" height="30" rx="4" fill="#10b981" opacity="0.6"/>
+  <rect x="674" y="131" width="46" height="70" rx="4" fill="#f59e0b" opacity="0.6"/>
+  <rect x="470" y="180" width="130" height="6" rx="3" fill="#334155"/>
+  <rect x="470" y="193" width="200" height="6" rx="3" fill="#334155"/>
+  <rect x="470" y="206" width="160" height="6" rx="3" fill="#334155"/>
+  <rect x="470" y="219" width="100" height="6" rx="3" fill="#334155"/>
+
+  <!-- Cards section -->
+  <rect x="0" y="252" width="800" height="148" fill="#f1f5f9"/>
+  <!-- Section heading -->
+  <rect x="80" y="266" width="120" height="14" rx="3" fill="#1e293b"/>
+  <!-- 3 Cards -->
+  <rect x="80"  y="292" width="190" height="90" rx="8" fill="#ffffff" filter="url(#shadow)"/>
+  <rect x="290" y="292" width="190" height="90" rx="8" fill="#ffffff"/>
+  <rect x="500" y="292" width="190" height="90" rx="8" fill="#ffffff"/>
+  <!-- Card color bars -->
+  <rect x="80"  y="292" width="190" height="8" rx="4" fill="#3b82f6"/>
+  <rect x="290" y="292" width="190" height="8" rx="4" fill="#8b5cf6"/>
+  <rect x="500" y="292" width="190" height="8" rx="4" fill="#10b981"/>
+  <!-- Card content lines -->
+  <rect x="92"  y="310" width="120" height="9" rx="2" fill="#1e293b"/>
+  <rect x="92"  y="327" width="160" height="7" rx="2" fill="#94a3b8"/>
+  <rect x="92"  y="341" width="140" height="7" rx="2" fill="#94a3b8"/>
+  <rect x="92"  y="360" width="60" height="14" rx="7" fill="#eff6ff"/>
+  <rect x="302" y="310" width="120" height="9" rx="2" fill="#1e293b"/>
+  <rect x="302" y="327" width="150" height="7" rx="2" fill="#94a3b8"/>
+  <rect x="302" y="341" width="130" height="7" rx="2" fill="#94a3b8"/>
+  <rect x="302" y="360" width="60" height="14" rx="7" fill="#f5f3ff"/>
+  <rect x="512" y="310" width="120" height="9" rx="2" fill="#1e293b"/>
+  <rect x="512" y="327" width="155" height="7" rx="2" fill="#94a3b8"/>
+  <rect x="512" y="341" width="130" height="7" rx="2" fill="#94a3b8"/>
+  <rect x="512" y="360" width="60" height="14" rx="7" fill="#f0fdf4"/>
+</svg>

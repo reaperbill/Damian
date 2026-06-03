@@ -1,0 +1,19 @@
+{
+  "projectPath": "College/Database/hw4",
+  "title": "SQL Views & Complex Queries",
+  "description": "Oracle SQL work on a ride-sharing schema (Trips, Customers, Drivers, Vehicles). Creates a `frequent_riders` view aggregating riders with three or more trips, then writes multi-table JOIN queries using date filtering, CASE expressions, and aggregate functions with TRIM, TO_CHAR, and NVL for data formatting and null handling.",
+  "shortDescription": "Oracle SQL: frequent-rider view and multi-table JOINs with aggregates on a ride-sharing schema.",
+  "tags": [
+    "SQL",
+    "Oracle",
+    "Databases",
+    "Views",
+    "Joins",
+    "Aggregation"
+  ],
+  "color": "linear-gradient(135deg, #654ea3 0%, #eaafc8 100%)",
+  "link": null,
+  "openInNewTab": false,
+  "weight": 25,
+  "category": "Tool"
+}

@@ -1,0 +1,18 @@
+{
+  "title": "Aviation Accidents Analysis",
+  "description": "A two-notebook data project on FAA aviation accident records. The cleaning notebook normalizes raw AviationData.csv \u00e2\u20ac\u201d handling missing values and standardizing state codes against USState_Codes.csv. The analysis notebook explores accident trends, injury severity rates, and aircraft risk by category using pandas and SQLite.",
+  "shortDescription": "FAA aviation accident data cleaning and exploratory analysis using pandas and SQLite.",
+  "tags": [
+    "Python",
+    "Pandas",
+    "SQLite",
+    "Data Cleaning",
+    "EDA"
+  ],
+  "color": "linear-gradient(135deg, #f7971e 0%, #ffd200 100%)",
+  "link": null,
+  "openInNewTab": false,
+  "weight": 28,
+  "subcategory": "Analysis",
+  "category": "Data"
+}

@@ -1,0 +1,18 @@
+{
+  "title": "Python Text Analysis",
+  "description": "A text analysis script using regex and the collections module to extract statistics from news article content \u00e2\u20ac\u201d counting word frequencies with whole-word boundary matching, identifying the most common word, computing average word length, and parsing paragraph and sentence boundaries from plain text.",
+  "shortDescription": "Regex-based text analysis: word frequency, sentence parsing, and paragraph counting.",
+  "tags": [
+    "Python",
+    "Regex",
+    "Text Analysis",
+    "NLP",
+    "Collections"
+  ],
+  "color": "linear-gradient(135deg, #e65c00 0%, #f9d423 100%)",
+  "link": null,
+  "openInNewTab": false,
+  "weight": 12,
+  "subcategory": "Analysis",
+  "category": "Data"
+}

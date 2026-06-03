@@ -1,0 +1,17 @@
+{
+  "title": "Feature Flag Manager",
+  "description": "An experimental feature flag management tool built during the Flatiron apprenticeship using Next.js, TypeScript, and Prisma. Provides a UI for creating, toggling, and targeting feature flags \u00e2\u20ac\u201d exploring how teams control gradual feature rollouts without redeploying code. (Incomplete, core flag management features implemented, but UI pathing and targeting rules still in progress.)",
+  "shortDescription": "Next.js + Prisma tool for managing and toggling feature flags.",
+  "tags": [
+    "Next.js",
+    "TypeScript",
+    "Prisma",
+    "Feature Flags",
+    "Full-Stack"
+  ],
+  "color": "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+  "link": "https://github.com/fs-apprenticeship/feature-flag-tool-experimental.git",
+  "openInNewTab": true,
+  "weight": 82,
+  "category": "Software"
+}

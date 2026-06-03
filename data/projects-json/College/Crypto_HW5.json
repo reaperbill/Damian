@@ -1,0 +1,19 @@
+{
+  "projectPath": "College/Crypto/hw5",
+  "title": "Digital Signatures & HMAC",
+  "description": "RSA digital signature generation and verification using SHA-256, paired with HMAC message authentication codes for integrity checking. Also includes a birthday paradox implementation that demonstrates how hash collision probability grows with the number of inputs \u00e2\u20ac\u201d illustrating a fundamental weakness in short-digest hash functions.",
+  "shortDescription": "RSA digital signatures (SHA-256), HMAC authentication, and birthday paradox collision demo.",
+  "tags": [
+    "Python",
+    "Cryptography",
+    "RSA",
+    "HMAC",
+    "SHA-256",
+    "Digital Signatures"
+  ],
+  "color": "linear-gradient(135deg, #0f2027 0%, #2c5364 100%)",
+  "link": null,
+  "openInNewTab": false,
+  "weight": 48,
+  "category": "Tool"
+}
