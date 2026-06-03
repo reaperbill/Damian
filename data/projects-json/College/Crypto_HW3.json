@@ -1,0 +1,19 @@
+{
+  "projectPath": "College/Crypto/hw3",
+  "title": "AES & RSA Encryption",
+  "description": "AES-128 CBC mode and RSA PKCS1-OAEP encryption implemented in Python using PyCryptodome. Covers key generation, encrypt/decrypt operations for both ciphers, and a performance benchmark comparing throughput \u00e2\u20ac\u201d illustrating the speed tradeoff between symmetric and asymmetric encryption.",
+  "shortDescription": "AES-128 CBC and RSA PKCS1-OAEP encryption with key generation and performance benchmarking.",
+  "tags": [
+    "Python",
+    "Cryptography",
+    "AES",
+    "RSA",
+    "PyCryptodome",
+    "Security"
+  ],
+  "color": "linear-gradient(135deg, #0f2027 0%, #2c5364 100%)",
+  "link": null,
+  "openInNewTab": false,
+  "weight": 45,
+  "category": "Tool"
+}

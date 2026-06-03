@@ -1,0 +1,17 @@
+{
+  "title": "Attack Map",
+  "description": "A Next.js security dashboard built during the Flatiron apprenticeship that ingests nmap scan results and visualizes network attack surfaces \u00e2\u20ac\u201d displaying open ports, services, vulnerabilities, and host information in an interactive UI.",
+  "shortDescription": "Next.js dashboard that parses nmap scans and visualizes network attack surfaces.",
+  "tags": [
+    "Next.js",
+    "TypeScript",
+    "Security",
+    "Networking",
+    "Nmap"
+  ],
+  "color": "linear-gradient(135deg, #ff7e5f 0%, #feb47b 100%)",
+  "link": "https://github.com/fs-apprenticeship/AttackMap",
+  "openInNewTab": true,
+  "weight": 95,
+  "category": "Software"
+}

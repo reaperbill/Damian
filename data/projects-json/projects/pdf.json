@@ -1,0 +1,16 @@
+{
+  "title": "PDF Utilities",
+  "description": "A small personal Python toolbox for working with PDF documents, including a script to remove password protection from PDFs and utilities for extracting and reorganizing content.",
+  "shortDescription": "Python scripts for PDF manipulation and password removal.",
+  "tags": [
+    "Python",
+    "PDF",
+    "Automation",
+    "Utilities"
+  ],
+  "color": "linear-gradient(135deg, #8e2de2 0%, #4a00e0 100%)",
+  "link": null,
+  "openInNewTab": false,
+  "weight": 1,
+  "category": "Tool"
+}

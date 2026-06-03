@@ -1,0 +1,19 @@
+{
+  "projectPath": "College/CSCE-3513-Group-14-main",
+  "title": "Laser Tag System",
+  "description": "A team-built Java MVC application for managing laser tag games. A player entry screen collects team and player data before each match, a UDP module handles real-time network communication between equipment on port 7500 using a custom packet protocol, a Supabase integration persists player scores and history, and a controller coordinates live game state across the model and views. Includes a background music system and a Python traffic generator for load testing. (Incomplete, but core features implemented.)",
+  "shortDescription": "Team Java project: MVC laser tag app with UDP networking, Supabase persistence, and music playback.",
+  "tags": [
+    "Java",
+    "MVC",
+    "UDP",
+    "Networking",
+    "Supabase",
+    "Team Project"
+  ],
+  "color": "linear-gradient(135deg, #11998e 0%, #38ef7d 100%)",
+  "link": "https://github.com/reaperbill/LaserTagSoftware2024.git",
+  "openInNewTab": true,
+  "weight": 68,
+  "category": "Software"
+}

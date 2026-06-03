@@ -1,0 +1,19 @@
+{
+  "title": "Tableau: Airbnb Market Analysis",
+  "description": "An advanced Tableau project analyzing Airbnb short-term rental data (Madrid listings) to guide real estate investment decisions. A Python cleaning script preprocesses raw listing data before visualization. The final dashboard uses parameter controls, filters, custom navigation, and interactive actions to surface pricing trends, occupancy patterns, and neighborhood-level insights for potential investors.",
+  "shortDescription": "Advanced Tableau dashboard on Airbnb Madrid listings for short-term rental investment analysis.",
+  "tags": [
+    "Tableau",
+    "Data Visualization",
+    "Airbnb",
+    "Real Estate",
+    "Python",
+    "Flatiron"
+  ],
+  "color": "linear-gradient(135deg, #ff416c 0%, #ff4b2b 100%)",
+  "link": "https://public.tableau.com/views/MadridAirbnbInvestmentAnalysis/ExecutiveSummary?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link",
+  "openInNewTab": true,
+  "weight": 40,
+  "subcategory": "Design",
+  "category": "Data"
+}

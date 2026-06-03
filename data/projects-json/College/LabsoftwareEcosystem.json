@@ -1,0 +1,20 @@
+{
+  "title": "Lab Software Ecosystem",
+  "description": "A full-stack research lab management platform built with Next.js and AWS Amplify Gen 2. Consolidates team file storage and communication into one interface \u00e2\u20ac\u201d administrators invite and remove team members via Amazon Cognito, files are managed in S3, and real-time data flows through a GraphQL API backed by AWS AppSync and DynamoDB.",
+  "shortDescription": "Next.js + AWS Amplify platform for research lab file management and team communication.",
+  "tags": [
+    "Next.js",
+    "TypeScript",
+    "AWS",
+    "Amplify",
+    "DynamoDB",
+    "GraphQL",
+    "Cognito"
+  ],
+  "color": "linear-gradient(135deg, #232526 0%, #414345 100%)",
+  "link": "https://github.com/drs3513/LabSoftwareEcosystem",
+  "openInNewTab": true,
+  "weight": 90,
+  "subcategory": "Data Engineering",
+  "category": "Software"
+}

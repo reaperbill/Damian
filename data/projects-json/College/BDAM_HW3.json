@@ -1,0 +1,19 @@
+{
+  "projectPath": "College/BDAM/Hw3",
+  "title": "PageRank with PySpark",
+  "description": "PageRank implemented in PySpark \u00e2\u20ac\u201d iteratively computes node importance scores across a web graph using a configurable damping factor (beta=0.8) over 40 iterations. Uses groupByKey and reduceByKey with lambda expressions to distribute link contributions and accumulate rank values across partitions.",
+  "shortDescription": "Iterative PageRank over a web graph using PySpark groupByKey and reduceByKey.",
+  "tags": [
+    "Python",
+    "PySpark",
+    "PageRank",
+    "Big Data",
+    "Graph",
+    "Lambda"
+  ],
+  "color": "linear-gradient(135deg, #8e44ad 0%, #3498db 100%)",
+  "link": null,
+  "openInNewTab": false,
+  "weight": 40,
+  "category": "Data"
+}

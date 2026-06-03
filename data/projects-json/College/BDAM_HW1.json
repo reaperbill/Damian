@@ -1,0 +1,18 @@
+{
+  "projectPath": "College/BDAM/hw1",
+  "title": "Distributed Matrix & Word Count",
+  "description": "PySpark scripts for two distributed computation tasks: matrix multiplication using MapReduce over partitioned row and column data, and letter-frequency word counting across large text corpora \u00e2\u20ac\u201d both using lambda expressions and reduceByKey to aggregate results across worker nodes.",
+  "shortDescription": "PySpark MapReduce: distributed matrix multiplication and letter-frequency word counting.",
+  "tags": [
+    "Python",
+    "PySpark",
+    "MapReduce",
+    "Big Data",
+    "Lambda"
+  ],
+  "color": "linear-gradient(135deg, #8e44ad 0%, #3498db 100%)",
+  "link": null,
+  "openInNewTab": false,
+  "weight": 35,
+  "category": "Data"
+}

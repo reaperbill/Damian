@@ -1,0 +1,18 @@
+{
+  "projectPath": "College/AI/HW3",
+  "title": "Pac-Man Search Agents",
+  "description": "Python agents that navigate and play Pac-Man using classical search algorithms \u00e2\u20ac\u201d depth-first, breadth-first, uniform cost, and A*. Each strategy is implemented against the Berkeley Pac-Man framework, with multiple layouts and agent types (reflex, greedy, heuristic) used to test pathfinding quality and efficiency.",
+  "shortDescription": "Pac-Man agents using DFS, BFS, UCS, and A* search strategies.",
+  "tags": [
+    "Python",
+    "AI",
+    "Search Algorithms",
+    "Pac-Man",
+    "Pathfinding"
+  ],
+  "color": "linear-gradient(135deg, #00b09b 0%, #96c93d 100%)",
+  "link": null,
+  "openInNewTab": false,
+  "weight": 43,
+  "category": "Tool"
+}
