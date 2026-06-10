@@ -155,7 +155,7 @@ async function buildCache(): Promise<ProjectCache> {
 
     colorIndex++;
     byId[id] = project;
-    if (isSchool) {
+    if (type === 'School') {
       school.push(project);
     } else {
       personal.push(project);
